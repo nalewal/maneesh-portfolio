@@ -68,7 +68,7 @@ export default function Hero({ onOpenTerminal }: Props) {
           {/* Left Content */}
           <div className="flex flex-col items-start gap-5 flex-1">
 
-            {/* Availability Badge — static, not clickable */}
+            {/* Availability Badge */}
             <div
               style={{ padding: "10px 24px" }}
               className={`flex items-center gap-3 rounded-full border text-sm font-medium select-none ${
@@ -168,25 +168,17 @@ export default function Hero({ onOpenTerminal }: Props) {
 
           {/* Right — Photo Frame */}
           <div className="relative flex items-center justify-center shrink-0">
-
-            {/* Outer ring — spins green when available, static red when not */}
             <div
               className={`absolute w-72 h-72 rounded-full border-2 border-dashed transition-colors duration-700 ${
-                IS_AVAILABLE
-                  ? "border-green-500/40 animate-spin"
-                  : "border-red-500/30"
+                IS_AVAILABLE ? "border-green-500/40 animate-spin" : "border-red-500/30"
               }`}
               style={{ animationDuration: "12s" }}
             />
-
-            {/* Middle ring */}
             <div
               className={`absolute w-64 h-64 rounded-full border transition-colors duration-700 ${
                 IS_AVAILABLE ? "border-green-500/20" : "border-red-500/10"
               }`}
             />
-
-            {/* Photo container */}
             <div
               className={`w-56 h-56 rounded-full border-4 overflow-hidden bg-[#111] relative z-10 shadow-xl transition-all duration-700 ${
                 IS_AVAILABLE
@@ -195,24 +187,16 @@ export default function Hero({ onOpenTerminal }: Props) {
               }`}
             >
               <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br ${
-                IS_AVAILABLE
-                  ? "from-green-500/20 to-green-500/5"
-                  : "from-red-500/20 to-red-500/5"
+                IS_AVAILABLE ? "from-green-500/20 to-green-500/5" : "from-red-500/20 to-red-500/5"
               }`}>
                 <span className="text-6xl">👨‍💻</span>
               </div>
             </div>
-
           </div>
 
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-400">
-        <span className="text-xs font-mono">scroll down</span>
-        <div className="w-0.5 h-8 bg-gradient-to-b from-green-500 to-transparent animate-pulse" />
-      </div>
     </section>
   );
 }

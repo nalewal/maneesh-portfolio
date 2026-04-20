@@ -5,14 +5,14 @@ export const portfolioData = {
     name: "Maneesh Kumar",
     title: "Software Developer",
     tagline: "Building robust software with deep technical knowledge.",
-    email: "maneesh@email.com",         // ← replace
-    phone: "+91 XXXXXXXXXX",            // ← replace
-    dob: "DD Month YYYY",               // ← replace
-    address: "Your City, India",        // ← replace
-    linkedin: "https://linkedin.com/in/yourprofile",   // ← replace
-    github: "https://github.com/yourusername",         // ← replace
-    leetcode: "https://leetcode.com/yourusername",     // ← replace
-    resumeUrl: "/resume.pdf",
+    email: "mrnalewal2001@email.com",         // ← replace
+    phone: "+91 7380927206",            // ← replace
+    dob: "16 August 2001",               // ← replace
+    address: "Saharanpur, India",        // ← replace
+    linkedin: "https://www.linkedin.com/in/maneesh-kumar-995189220/",   // ← replace
+    github: "https://github.com/nalewal",         // ← replace
+    leetcode: "https://leetcode.com/u/maneesh_nalewal/",     // ← replace
+    resumeUrl: "../assets/personal-docs/ManeeshKumarResume.pdf",
   },
 
   about: `I am a passionate Software Developer with deep knowledge of software development principles, 

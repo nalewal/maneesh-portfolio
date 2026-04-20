@@ -13,6 +13,7 @@ import PersonalProjects from "@/components/portfolio/PersonalProjects";
 import Education from "@/components/portfolio/Education";
 import Contact from "@/components/portfolio/Contact";
 import Footer from "@/components/portfolio/Footer";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 
 export default function Home() {
   const [showTerminal, setShowTerminal] = useState(true);
@@ -25,14 +26,14 @@ export default function Home() {
         <>
           <Navbar onOpenTerminal={() => setShowTerminal(true)} />
           <Hero onOpenTerminal={() => setShowTerminal(true)} />
-          <About />
-          <Skills />
-          <Experience />
-          <IndustrialProjects />
-          <PersonalProjects />
-          <Education />
-          <Contact />
-          <Footer />
+          <ScrollReveal><About /></ScrollReveal>
+          <ScrollReveal delay={100}><Skills /></ScrollReveal>
+          <ScrollReveal delay={100}><Experience /></ScrollReveal>
+          <ScrollReveal delay={100}><IndustrialProjects /></ScrollReveal>
+          <ScrollReveal delay={100}><PersonalProjects /></ScrollReveal>
+          <ScrollReveal delay={100}><Education /></ScrollReveal>
+          <ScrollReveal delay={100}><Contact /></ScrollReveal>
+          <ScrollReveal delay={100}><Footer /></ScrollReveal>
         </>
       )}
     </main>
